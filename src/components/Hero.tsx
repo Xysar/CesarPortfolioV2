@@ -9,6 +9,17 @@ const Hero = () => {
   let width = window.innerWidth;
   let height = window.innerHeight;
 
+  const element = () => {
+    return (
+      <a
+        className="inline-block w-full px-5 py-2 md:inline md:box-border md:px-5 md:py-[10px] md:rounded-xl text-white bg-slate-800 hover:bg-opacity-0 ease-in duration-150 hover:border-slate-800 hover:text-slate-800 hover:border"
+        href="#projects"
+      >
+        Portfolio
+      </a>
+    );
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       setDegrees((prevDegree) => prevDegree + 1);
@@ -34,8 +45,8 @@ const Hero = () => {
   let { offsetX, offsetY } = coordinatesToTranslation(mousePosition);
 
   return (
-    <section className="relative overflow-hidden min-h-screen">
-      <Navbar />
+    <section className="relative overflow-hidden min-h-screen max-h-[1200px]">
+      <Navbar portfolio={element} />
       <div className="sm:h-[calc(100%-105px)] gap-12 sm:gap-32 flex flex-col sm:justify-between items-center">
         <div></div>
         <div className="px-6 flex sm:flex-row flex-col items-center gap-10">

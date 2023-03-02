@@ -2,14 +2,17 @@ import React from "react";
 
 const ContactMe = () => {
   return (
-    <div className="mx-auto pb-24 px-12 max-w-[1080px]">
+    <div
+      data-aos="fade-up"
+      className="mx-auto pb-24 px-2 md:px-12 max-w-[1080px]"
+    >
       <h3 className="text-center text-3xl font-bold mb-10 ">Contact Me</h3>
       <div className="flex flex-wrap gap-3 mb-10">
-        <div className="bg-cyan-50 m-auto rounded-xl p-4 w-72 h-24 flex items-center gap-3 ">
+        <div className="bg-cyan-50 m-auto rounded-xl p-4 w-72 h-24 flex items-center gap-3 hover:shadow-md ">
           <img className="w-10 h-10" src="assets/mail-icon.svg" alt="" />
           <p className="text-center text-sm">CesarCamacho760@Gmail.com</p>
         </div>
-        <div className="bg-orange-50 m-auto rounded-xl p-4 w-72 h-24 flex items-center gap-3 ">
+        <div className="bg-orange-50 m-auto rounded-xl p-4 w-72 h-24 flex items-center gap-3 hover:shadow-md ">
           <img className="w-10 h-10 " src="assets/phone-call-icon.svg" alt="" />
           <p className="text-center">(760) 917-7209</p>
         </div>
