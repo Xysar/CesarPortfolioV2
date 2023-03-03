@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {
+  const form = useRef(null);
+  useEffect(() => {
+    emailjs.init(import.meta.env.VITE_PUBLIC_KEY);
+  }, []);
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    emailjs.sendForm(
+      import.meta.env.VITE_SERVICE_ID,
+      import.meta.env.VITE_TEMPLATE_ID,
+      form.current
+    );
+  };
+
   return (
     <div
       data-aos="fade-up"
@@ -18,18 +33,23 @@ const ContactMe = () => {
         </div>
       </div>
 
-      <form className="flex flex-col w-full gap-4" action="">
+      <form
+        ref={form}
+        onSubmit={(e) => handleSubmit(e)}
+        className="flex flex-col w-full gap-4"
+        action=""
+      >
         <input
           className=" bg-slate-300 bg-opacity-50 rounded-lg p-3"
           placeholder="Your Name"
-          type="email"
+          type="name"
           name="name"
         />
 
         <input
           className=" bg-slate-300 bg-opacity-50 rounded-lg p-3"
           placeholder="Your Email"
-          type="text"
+          type="email"
           name="email"
         />
 
@@ -38,7 +58,10 @@ const ContactMe = () => {
           placeholder="Your Message"
           name="message"
         />
-        <button className="py-4 px-8 hover:scale-105 ease-in duration-150 mt-3 bg-navy rounded-xl self-center text-white">
+        <button
+          type="submit"
+          className="py-4 px-8 hover:scale-105 ease-in duration-150 mt-3 bg-navy rounded-xl self-center text-white"
+        >
           Send Message
         </button>
       </form>

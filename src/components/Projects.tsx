@@ -16,7 +16,7 @@ const Projects = () => {
     if (category === fields.Web) {
       return (
         <div className="flex flex-wrap justify-center gap-16">
-          <div className=" overflow-hidden bg-white w-80 p-4 rounded-lg shadow-sm hover:shadow-xl ease-in duration-150">
+          {/* <div className=" overflow-hidden bg-white w-80 p-4 rounded-lg shadow-sm hover:shadow-xl ease-in duration-150">
             <div className="relative">
               <img
                 className="w-72 m-auto h-72 object-cover mb-6 rounded-lg"
@@ -43,16 +43,17 @@ const Projects = () => {
                 Javascript
               </p>
             </div>
-          </div>
+          </div> */}
           <div className="bg-white  w-80 p-4 rounded-lg shadow-sm hover:shadow-xl ease-in duration-150">
-            <div className="relative">
+            <div className="relative hover:flex">
               <img
                 className="w-72 m-auto h-72 object-cover mb-6 rounded-lg "
                 src="assets/pathfinderscreenshot.png"
-                alt=""
+                alt="screenshot of pathfinder project"
               />
-              <div className="absolute top-0 left-0 bg-white rounded-br-lg p-1 w-12 h-12 ">
-                <img src="assets/React-icon.svg" alt="" />
+              <div className=" hidden  absolute w-full h-full  top-0 justify-center items-center ">
+                <div>Github</div>
+                <div>Link</div>
               </div>
             </div>
             <h1 className="text-center  mb-3 font-bold">Pathfinder</h1>
@@ -74,7 +75,7 @@ const Projects = () => {
             <img
               className="w-72 m-auto h-72 object-cover mb-6 rounded-lg "
               src="assets/mathbattle.png"
-              alt=""
+              alt="Mathbattle Screenshot"
             />
             <h1 className="text-center mb-3 font-bold">Math Battle</h1>
             <p className="mb-3">
