@@ -51,7 +51,7 @@ const Projects = () => {
                 src="assets/pathfinderscreenshot.png"
                 alt="screenshot of pathfinder project"
               />
-              <div className="text-white opacity-0 ease-in duration-100 hover:opacity-90 flex bg-slate-900 absolute w-full h-full top-0 gap-2 flex-col justify-center items-center ">
+              <div className="opacity-0 ease-in duration-100 hover:opacity-90 flex bg-slate-900 absolute w-full h-full top-0 gap-2 flex-col justify-center items-center ">
                 <div className="">
                   <a
                     href="https://github.com/Xysar/pathfinder-react"
@@ -94,7 +94,7 @@ const Projects = () => {
                 src="assets/mathbattle.png"
                 alt="Mathbattle Screenshot"
               />
-              <div className="text-white opacity-0 ease-in duration-100 hover:opacity-90 flex bg-slate-900 absolute w-full h-full top-0 gap-2 flex-col justify-center items-center ">
+              <div className=" opacity-0 ease-in duration-100 hover:opacity-90 flex bg-slate-900 absolute w-full h-full top-0 gap-2 flex-col justify-center items-center ">
                 <div className="">
                   <a
                     href="https://github.com/Xysar/MathBattle"
@@ -133,7 +133,7 @@ const Projects = () => {
                 src="public/assets/restaurantScreenshot.png"
                 alt="screenshot of restaurant template website"
               />
-              <div className="text-white opacity-0 ease-in duration-100  hover:opacity-90 flex bg-slate-900 absolute w-full h-full top-0 gap-2 flex-col justify-center items-center ">
+              <div className="opacity-0 ease-in duration-100  hover:opacity-90 flex bg-slate-900 absolute w-full h-full top-0 gap-2 flex-col justify-center items-center ">
                 <div className="">
                   <a
                     href="https://github.com/Xysar/restaurant-template"

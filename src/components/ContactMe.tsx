@@ -1,19 +1,45 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactMe = () => {
   const form = useRef(null);
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const msgRef = useRef(null);
+  const captchaRef = useRef(null);
+
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+
   useEffect(() => {
     emailjs.init(import.meta.env.VITE_PUBLIC_KEY);
   }, []);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    emailjs.sendForm(
-      import.meta.env.VITE_SERVICE_ID,
-      import.meta.env.VITE_TEMPLATE_ID,
-      form.current
-    );
+    let input = {
+      name: nameRef.current.value,
+      email: emailRef.current.value,
+      message: msgRef.current.value,
+      "g-recaptcha-response": captchaRef.current.getValue(),
+    };
+    emailjs
+      .send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        input
+      )
+      .then(
+        (result) => {
+          setSuccess(true);
+          setError(false);
+        },
+        (error) => {
+          setError(true);
+        }
+      );
+    captchaRef.current.reset();
   };
 
   return (
@@ -40,30 +66,56 @@ const ContactMe = () => {
         action=""
       >
         <input
+          required
           className=" bg-slate-300 bg-opacity-50 rounded-lg p-3"
           placeholder="Your Name"
+          ref={nameRef}
           type="name"
           name="name"
         />
 
         <input
+          required
           className=" bg-slate-300 bg-opacity-50 rounded-lg p-3"
           placeholder="Your Email"
+          ref={emailRef}
           type="email"
           name="email"
         />
 
         <textarea
+          required
+          ref={msgRef}
           className=" bg-slate-300 bg-opacity-50 rounded-lg p-3 h-32 "
           placeholder="Your Message"
           name="message"
         />
+
+        <div className="self-center">
+          <ReCAPTCHA
+            ref={captchaRef}
+            sitekey={import.meta.env.VITE_CAPTCHA_KEY}
+          />
+        </div>
+
         <button
           type="submit"
-          className="py-4 px-8 hover:scale-105 ease-in duration-150 mt-3 bg-navy rounded-xl self-center text-white"
+          disabled={success ? true : false}
+          className={`${
+            success
+              ? "text-navy bg-slate-100 border-2 border-navy"
+              : "bg-navy text-white"
+          } flex  py-4 px-8 hover:scale-105 ease-in duration-150 mt-3  rounded-xl self-center `}
         >
-          Send Message
+          {success ? "Sent Successfully" : "Send Message"}
         </button>
+        <div
+          className={`${
+            error ? "flex" : "hidden"
+          }   py-4 px-8  ease-in duration-150  self-center  text-red-500`}
+        >
+          Failed to Send
+        </div>
       </form>
     </div>
   );
