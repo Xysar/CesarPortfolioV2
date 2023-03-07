@@ -130,7 +130,7 @@ const Projects = () => {
             <div className="relative rounded-lg overflow-hidden mb-6 ">
               <img
                 className="w-72 m-auto h-72 object-cover rounded-lg "
-                src="public/assets/restaurantScreenshot.png"
+                src="assets/restaurantScreenshot.png"
                 alt="screenshot of restaurant template website"
               />
               <div className="opacity-0 ease-in duration-100  hover:opacity-90 flex bg-slate-900 absolute w-full h-full top-0 gap-2 flex-col justify-center items-center ">
