@@ -1,13 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { MutableRefObject, useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactMe = () => {
-  const form = useRef(null);
-  const nameRef = useRef(null);
-  const emailRef = useRef(null);
-  const msgRef = useRef(null);
-  const captchaRef = useRef(null);
+  const nameRef = useRef() as MutableRefObject<HTMLInputElement>;
+  const emailRef = useRef() as MutableRefObject<HTMLInputElement>;
+  const msgRef = useRef() as MutableRefObject<HTMLTextAreaElement>;
+  const captchaRef = useRef() as MutableRefObject<ReCAPTCHA>;
 
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -60,7 +59,6 @@ const ContactMe = () => {
       </div>
 
       <form
-        ref={form}
         onSubmit={(e) => handleSubmit(e)}
         className="flex flex-col w-full gap-4"
         action=""
