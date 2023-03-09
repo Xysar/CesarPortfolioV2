@@ -12,7 +12,7 @@ const Hero = () => {
   const element = () => {
     return (
       <a
-        className="inline-block w-full px-5 py-2 md:inline md:box-border md:px-5 md:py-[10px] md:rounded-xl text-white bg-slate-800 hover:bg-opacity-0 ease-in duration-150 hover:border-slate-800 hover:text-slate-800 hover:border"
+        className="inline-block w-full bg-slate-800 px-5 py-2 text-white duration-150 ease-in hover:border hover:border-slate-800 hover:bg-opacity-0 hover:text-slate-800 md:box-border md:inline md:rounded-xl md:px-5 md:py-[10px]"
         href="#projects"
       >
         Portfolio
@@ -45,13 +45,13 @@ const Hero = () => {
   let { offsetX, offsetY } = coordinatesToTranslation(mousePosition);
 
   return (
-    <section className="relative overflow-hidden min-h-screen max-h-[1200px]">
+    <section className="relative max-h-[1200px] min-h-screen overflow-hidden">
       <Navbar portfolio={element} />
-      <div className="sm:h-[calc(100%-105px)] gap-12 sm:gap-32 flex flex-col sm:justify-between items-center">
+      <div className="flex flex-col items-center gap-12 sm:h-[calc(100%-105px)] sm:justify-between sm:gap-32">
         <div></div>
-        <div className="px-6 flex sm:flex-row flex-col items-center gap-10">
+        <div className="flex flex-col items-center gap-10 px-6 sm:flex-row">
           <img
-            className="w-52 sm:w-72  rounded-full"
+            className="w-52 rounded-full  sm:w-72"
             src="assets/profile-pic.jpg"
             alt=""
           />
@@ -60,7 +60,7 @@ const Hero = () => {
             <h1 className={`text-[2em] `}>Frontend Software Engineer </h1>
           </div>
         </div>
-        <a href="" className="mb-16 mt-0">
+        <a href="#projects" className="mb-16 mt-0">
           <img
             className="h-10 w-10"
             src="assets/caret-down.png"
@@ -69,7 +69,7 @@ const Hero = () => {
         </a>
       </div>
       <div
-        className={`absolute grid grid-cols-2  gap-2  top-[25%] right-[15%]  h-[500px] w-[500px] z-[-1]  `}
+        className={`absolute top-[25%] right-[15%]  z-[-1]  grid h-[500px]  w-[500px] grid-cols-2 gap-2  `}
         style={{
           transform: `translate(${offsetX}px, ${offsetY}px) rotate(${degrees}deg)`,
         }}

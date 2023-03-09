@@ -44,19 +44,19 @@ const Projects = () => {
               </p>
             </div>
           </div> */}
-          <div className="bg-white  w-80 p-4 rounded-lg shadow-sm hover:shadow-xl ease-in duration-150">
-            <div className="relative rounded-lg overflow-hidden mb-6 ">
+          <div className="w-80  rounded-lg bg-white p-4 shadow-sm duration-150 ease-in hover:shadow-xl">
+            <div className="relative mb-6 overflow-hidden rounded-lg ">
               <img
-                className="w-72 m-auto h-72 object-cover  "
+                className="m-auto h-72 w-72 object-cover  "
                 src="assets/pathfinderscreenshot.png"
                 alt="screenshot of pathfinder project"
               />
-              <div className="opacity-0 ease-in duration-100 hover:opacity-90 flex bg-slate-900 absolute w-full h-full top-0 gap-2 flex-col justify-center items-center ">
+              <div className="absolute top-0 flex h-full w-full flex-col items-center justify-center gap-2 bg-slate-900 opacity-0 duration-100 ease-in hover:opacity-90 ">
                 <div className="">
                   <a
                     href="https://github.com/Xysar/pathfinder-react"
                     target="_blank"
-                    className="inline-block hover:bg-yellow-400 hover:text-black rounded-full py-2 px-3 border-2 border-yellow-400 text-yellow-400"
+                    className="inline-block rounded-full border-2 border-yellow-400 py-2 px-3 text-yellow-400 hover:bg-yellow-400 hover:text-black"
                   >
                     Github Repo
                   </a>
@@ -65,41 +65,41 @@ const Projects = () => {
                   <a
                     href="https://xysar.github.io/pathfinder-react/"
                     target="_blank"
-                    className="inline-block hover:bg-yellow-400 hover:text-black rounded-full py-2 px-3 border-2 border-yellow-400 text-yellow-400"
+                    className="inline-block rounded-full border-2 border-yellow-400 py-2 px-3 text-yellow-400 hover:bg-yellow-400 hover:text-black"
                   >
                     Open Project
                   </a>
                 </div>
               </div>
             </div>
-            <h1 className="text-center  mb-3 font-bold">Pathfinder</h1>
+            <h1 className="mb-3  text-center font-bold">Pathfinder</h1>
             <p className="mb-3  ">
               Pathfinder visualizer that displays pathfinding algorithms such as
               A*, Dijsktra's.
             </p>
-            <div className=" flex gap-1 flex-wrap ">
-              <p className="inline-block px-2 py-1  bg-navy text-white ">
+            <div className=" flex flex-wrap gap-1 ">
+              <p className="inline-block bg-navy px-2  py-1 text-white ">
                 React
               </p>
-              <p className="inline-block px-2 py-1 bg-navy text-white ">
+              <p className="inline-block bg-navy px-2 py-1 text-white ">
                 {" "}
                 Javascript
               </p>
             </div>
           </div>
-          <div className="bg-white w-80 p-4 rounded-lg shadow-sm hover:shadow-xl ease-in duration-150">
-            <div className="relative rounded-lg overflow-hidden mb-6 ">
+          <div className="w-80 rounded-lg bg-white p-4 shadow-sm duration-150 ease-in hover:shadow-xl">
+            <div className="relative mb-6 overflow-hidden rounded-lg ">
               <img
-                className="w-72 m-auto h-72 object-cover rounded-lg "
+                className="m-auto h-72 w-72 rounded-lg object-cover "
                 src="assets/mathbattle.png"
                 alt="Mathbattle Screenshot"
               />
-              <div className=" opacity-0 ease-in duration-100 hover:opacity-90 flex bg-slate-900 absolute w-full h-full top-0 gap-2 flex-col justify-center items-center ">
+              <div className=" absolute top-0 flex h-full w-full flex-col items-center justify-center gap-2 bg-slate-900 opacity-0 duration-100 ease-in hover:opacity-90 ">
                 <div className="">
                   <a
                     href="https://github.com/Xysar/MathBattle"
                     target="_blank"
-                    className="inline-block hover:bg-yellow-400 hover:text-black rounded-full py-2 px-3 border-2 border-yellow-400 text-yellow-400"
+                    className="inline-block rounded-full border-2 border-yellow-400 py-2 px-3 text-yellow-400 hover:bg-yellow-400 hover:text-black"
                   >
                     Github Repo
                   </a>
@@ -108,37 +108,37 @@ const Projects = () => {
                   <a
                     href="https://xysar.github.io/MathBattle/"
                     target="_blank"
-                    className="inline-block hover:bg-yellow-400 hover:text-black rounded-full py-2 px-3 border-2 border-yellow-400 text-yellow-400"
+                    className="inline-block rounded-full border-2 border-yellow-400 py-2 px-3 text-yellow-400 hover:bg-yellow-400 hover:text-black"
                   >
                     Open Project
                   </a>
                 </div>
               </div>
             </div>
-            <h1 className="text-center mb-3 font-bold">Math Battle</h1>
+            <h1 className="mb-3 text-center font-bold">Math Battle</h1>
             <p className="mb-3">
               2D Tower Defense web game designed to teach basic arithmetic.
             </p>
-            <div className=" flex gap-1 flex-wrap ">
-              <p className="inline-block px-2 py-1 bg-navy text-white ">
+            <div className=" flex flex-wrap gap-1 ">
+              <p className="inline-block bg-navy px-2 py-1 text-white ">
                 {" "}
                 Javascript
               </p>
             </div>
           </div>
-          <div className="bg-white w-80 p-4 rounded-lg shadow-sm hover:shadow-xl ease-in duration-150">
-            <div className="relative rounded-lg overflow-hidden mb-6 ">
+          <div className="w-80 rounded-lg bg-white p-4 shadow-sm duration-150 ease-in hover:shadow-xl">
+            <div className="relative mb-6 overflow-hidden rounded-lg ">
               <img
-                className="w-72 m-auto h-72 object-cover rounded-lg "
+                className="m-auto h-72 w-72 rounded-lg object-cover "
                 src="assets/restaurantScreenshot.png"
                 alt="screenshot of restaurant template website"
               />
-              <div className="opacity-0 ease-in duration-100  hover:opacity-90 flex bg-slate-900 absolute w-full h-full top-0 gap-2 flex-col justify-center items-center ">
+              <div className="absolute top-0 flex  h-full w-full flex-col items-center justify-center gap-2 bg-slate-900 opacity-0 duration-100 ease-in hover:opacity-90 ">
                 <div className="">
                   <a
                     href="https://github.com/Xysar/restaurant-template"
                     target="_blank"
-                    className="inline-block hover:bg-yellow-400 hover:text-black rounded-full py-2 px-3 border-2 border-yellow-400 text-yellow-400"
+                    className="inline-block rounded-full border-2 border-yellow-400 py-2 px-3 text-yellow-400 hover:bg-yellow-400 hover:text-black"
                   >
                     Github Repo
                   </a>
@@ -147,22 +147,22 @@ const Projects = () => {
                   <a
                     href="https://restaurant-template-o1465utyi-xysar.vercel.app/"
                     target="_blank"
-                    className="inline-block hover:bg-yellow-400 hover:text-black rounded-full py-2 px-3 border-2 border-yellow-400 text-yellow-400"
+                    className="inline-block rounded-full border-2 border-yellow-400 py-2 px-3 text-yellow-400 hover:bg-yellow-400 hover:text-black"
                   >
                     Open Project
                   </a>
                 </div>
               </div>
             </div>
-            <h1 className="text-center mb-3 font-bold">Restaurant Website</h1>
+            <h1 className="mb-3 text-center font-bold">Restaurant Website</h1>
             <p className="mb-3">
               Custom made website template designed for restaurant.
             </p>
-            <div className=" flex gap-1 flex-wrap ">
-              <p className="inline-block px-2 py-1  bg-navy text-white ">
+            <div className=" flex flex-wrap gap-1 ">
+              <p className="inline-block bg-navy px-2  py-1 text-white ">
                 React
               </p>
-              <p className="inline-block px-2 py-1 bg-navy text-white ">
+              <p className="inline-block bg-navy px-2 py-1 text-white ">
                 {" "}
                 Javascript
               </p>
@@ -176,8 +176,8 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className="pb-24 px-5 m-auto max-w-[1200px] ">
-      <p className="text-center text-3xl font-bold mb-10 tracking-wider ">
+    <div id="projects" className="m-auto max-w-[1200px] px-5 pb-24 ">
+      <p className="mb-10 text-center text-3xl font-bold tracking-wider ">
         Projects
       </p>
       <div data-aos="fade-up">

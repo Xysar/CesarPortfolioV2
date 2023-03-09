@@ -7,7 +7,7 @@ const Resume = () => {
   const element = () => {
     return (
       <Link
-        className="box-border px-5 py-[10px] rounded-xl text-white bg-slate-800 hover:bg-opacity-0 ease-in duration-150 hover:border-slate-800 hover:text-slate-800 hover:border"
+        className="box-border rounded-xl bg-slate-800 px-5 py-[10px] text-white duration-150 ease-in hover:border hover:border-slate-800 hover:bg-opacity-0 hover:text-slate-800"
         to="/"
       >
         Portfolio

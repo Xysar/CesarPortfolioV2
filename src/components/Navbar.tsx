@@ -5,16 +5,16 @@ const Navbar = ({ portfolio }: any) => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="h-[105px] relative">
-      <div className="max-w-[1400px] m-auto">
-        <div className=" flex justify-between items-center py-6 px-6 ">
-          <Link className="text-2xl flex-1" to="/">
+    <nav className="relative h-[105px]">
+      <div className="m-auto max-w-[1400px]">
+        <div className=" flex items-center justify-between py-6 px-6 ">
+          <Link className="flex-1 text-2xl" to="/">
             Cesar Camacho
           </Link>
-          <ul className="gap-16 hidden md:flex justify-end">
+          <ul className="hidden justify-end gap-16 md:flex">
             <li className="flex-1">
               <a
-                className=" flex-1 px-5 py-[10px] rounded-xl hover:text-white hover:bg-slate-800 ease-in duration-150"
+                className=" flex-1 rounded-xl px-5 py-[10px] duration-150 ease-in hover:bg-slate-800 hover:text-white"
                 href="https://github.com/Xysar"
                 target="_blank"
               >
@@ -23,7 +23,7 @@ const Navbar = ({ portfolio }: any) => {
             </li>
             <li className="flex-1">
               <a
-                className=" px-5 py-[10px] rounded-xl hover:text-white hover:bg-slate-800 ease-in duration-150"
+                className=" rounded-xl px-5 py-[10px] duration-150 ease-in hover:bg-slate-800 hover:text-white"
                 href="https://www.linkedin.com/in/cesarcamacho760/"
                 target="_blank"
               >
@@ -32,35 +32,35 @@ const Navbar = ({ portfolio }: any) => {
             </li>
             <li className="flex-1">
               <Link
-                className=" px-5 py-[10px] rounded-xl hover:text-white hover:bg-slate-800 ease-in duration-150"
+                className=" rounded-xl px-5 py-[10px] duration-150 ease-in hover:bg-slate-800 hover:text-white"
                 to="/resume"
               >
                 Resume
               </Link>
             </li>
-            <li className="flex-1 w-32">{portfolio()}</li>
+            <li className="w-32 flex-1">{portfolio()}</li>
           </ul>
-          <div className="md:hidden flex flex-1 justify-end">
+          <div className="flex flex-1 justify-end md:hidden">
             <button
               onClick={() => {
                 setToggle((prev) => !prev);
               }}
-              className="flex items-center z-[1] "
+              className="z-[1] flex items-center "
             >
               <img
                 src="assets/bars-solid.svg"
                 alt="Menu"
-                className="w-14 h-14 p-2 cursor-pointer object-contain"
+                className="h-14 w-14 cursor-pointer object-contain p-2"
               />
             </button>
             <ul
               className={`${
                 toggle ? "flex" : "hidden"
-              } flex-col absolute bg-slate-50 inset-y-0 right-0 min-h-screen  pt-24`}
+              } absolute inset-y-0 right-0 min-h-screen flex-col bg-slate-50  pt-24`}
             >
-              <li className="  text-center  bg-slate-500">
+              <li className="  bg-slate-500  text-center">
                 <a
-                  className="px-10 py-2   inline-block w-full  bg-slate-100  hover:text-white hover:bg-slate-800 ease-in duration-150"
+                  className="inline-block w-full   bg-slate-100 px-10  py-2  duration-150 ease-in hover:bg-slate-800 hover:text-white"
                   href="https://github.com/Xysar"
                   target="_blank"
                 >
@@ -69,7 +69,7 @@ const Navbar = ({ portfolio }: any) => {
               </li>
               <li className="text-center  ">
                 <a
-                  className="px-5 py-2  w-full inline-block hover:text-white hover:bg-slate-800 ease-in duration-150"
+                  className="inline-block w-full  px-5 py-2 duration-150 ease-in hover:bg-slate-800 hover:text-white"
                   href="https://www.linkedin.com/in/cesarcamacho760/"
                   target="_blank"
                 >
@@ -78,7 +78,7 @@ const Navbar = ({ portfolio }: any) => {
               </li>
               <li className="text-center">
                 <Link
-                  className="inline-block w-full px-5 py-2  hover:text-white hover:bg-slate-800 ease-in duration-150"
+                  className="inline-block w-full px-5 py-2  duration-150 ease-in hover:bg-slate-800 hover:text-white"
                   to="/resume"
                 >
                   Resume

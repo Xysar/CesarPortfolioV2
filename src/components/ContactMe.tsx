@@ -44,28 +44,28 @@ const ContactMe = () => {
   return (
     <div
       data-aos="fade-up"
-      className="mx-auto pb-24 px-2 md:px-12 max-w-[1080px]"
+      className="mx-auto max-w-[1080px] px-2 pb-24 md:px-12"
     >
-      <h3 className="text-center text-3xl font-bold mb-10 ">Contact Me</h3>
-      <div className="flex flex-wrap gap-3 mb-10">
-        <div className="bg-cyan-50 m-auto rounded-xl p-4 w-72 h-24 flex items-center gap-3 hover:shadow-md ">
-          <img className="w-10 h-10" src="assets/mail-icon.svg" alt="" />
+      <h3 className="mb-10 text-center text-3xl font-bold ">Contact Me</h3>
+      <div className="mb-10 flex flex-wrap gap-3">
+        <div className="m-auto flex h-24 w-72 items-center gap-3 rounded-xl bg-cyan-50 p-4 hover:shadow-md ">
+          <img className="h-10 w-10" src="assets/mail-icon.svg" alt="" />
           <p className="text-center text-sm">CesarCamacho760@Gmail.com</p>
         </div>
-        <div className="bg-orange-50 m-auto rounded-xl p-4 w-72 h-24 flex items-center gap-3 hover:shadow-md ">
-          <img className="w-10 h-10 " src="assets/phone-call-icon.svg" alt="" />
+        <div className="m-auto flex h-24 w-72 items-center gap-3 rounded-xl bg-orange-50 p-4 hover:shadow-md ">
+          <img className="h-10 w-10 " src="assets/phone-call-icon.svg" alt="" />
           <p className="text-center">(760) 917-7209</p>
         </div>
       </div>
 
       <form
         onSubmit={(e) => handleSubmit(e)}
-        className="flex flex-col w-full gap-4"
+        className="flex w-full flex-col gap-4"
         action=""
       >
         <input
           required
-          className=" bg-slate-300 bg-opacity-50 rounded-lg p-3"
+          className=" rounded-lg bg-slate-300 bg-opacity-50 p-3"
           placeholder="Your Name"
           ref={nameRef}
           type="name"
@@ -74,7 +74,7 @@ const ContactMe = () => {
 
         <input
           required
-          className=" bg-slate-300 bg-opacity-50 rounded-lg p-3"
+          className=" rounded-lg bg-slate-300 bg-opacity-50 p-3"
           placeholder="Your Email"
           ref={emailRef}
           type="email"
@@ -84,7 +84,7 @@ const ContactMe = () => {
         <textarea
           required
           ref={msgRef}
-          className=" bg-slate-300 bg-opacity-50 rounded-lg p-3 h-32 "
+          className=" h-32 rounded-lg bg-slate-300 bg-opacity-50 p-3 "
           placeholder="Your Message"
           name="message"
         />
@@ -101,16 +101,16 @@ const ContactMe = () => {
           disabled={success ? true : false}
           className={`${
             success
-              ? "text-navy bg-slate-100 border-2 border-navy"
+              ? "border-2 border-navy bg-slate-100 text-navy"
               : "bg-navy text-white"
-          } flex  py-4 px-8 hover:scale-105 ease-in duration-150 mt-3  rounded-xl self-center `}
+          } mt-3  flex self-center rounded-xl py-4 px-8 duration-150  ease-in hover:scale-105 `}
         >
           {success ? "Sent Successfully" : "Send Message"}
         </button>
         <div
           className={`${
             error ? "flex" : "hidden"
-          }   py-4 px-8  ease-in duration-150  self-center  text-red-500`}
+          }   self-center py-4  px-8 text-red-500  duration-150  ease-in`}
         >
           Failed to Send
         </div>
