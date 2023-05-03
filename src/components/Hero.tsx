@@ -47,7 +47,7 @@ const Hero = () => {
   return (
     <section className="relative max-h-[1200px] min-h-screen overflow-hidden">
       <Navbar portfolio={element} />
-      <div className="flex flex-col items-center gap-12 sm:h-[calc(100%-105px)] sm:justify-between sm:gap-32">
+      <div className="flex flex-col items-center justify-between gap-12 sm:h-[calc(100vh-105px)] sm:gap-32">
         <div></div>
         <div className="flex flex-col items-center gap-10 px-6 sm:flex-row">
           <img
