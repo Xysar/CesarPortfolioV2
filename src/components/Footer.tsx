@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <p className="mx-auto p-12 text-center text-slate-500">
-        Copyright © 2023 Cesar Camacho. All rights reserved.
+      <p className="mx-auto bg-[#0b2036] px-2 py-4 text-center text-neutral-300">
+        Developed by <span className="font-semibold">Cesar Camacho</span>
       </p>
     </div>
   );

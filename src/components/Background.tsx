@@ -110,6 +110,16 @@ const Background = () => {
             </div>
             <div data-aos="fade-left">
               <div className="mb-6 flex gap-10">
+                <p className="font-bold leading-8 text-blue-900 ">2023</p>{" "}
+                <p className=" text-lg leading-8">
+                  Freelance Web Developer
+                  <br />
+                  <span className=" text-[1.08rem] text-gray-600">
+                    Self-Employed
+                  </span>
+                </p>
+              </div>
+              <div className="mb-6 flex gap-10">
                 <p className="font-bold leading-8 text-blue-900 ">2022</p>{" "}
                 <p className=" text-lg leading-8">
                   Computer Science Research Assistant

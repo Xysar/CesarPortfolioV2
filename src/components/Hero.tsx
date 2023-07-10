@@ -34,10 +34,10 @@ const Hero = () => {
     let offsetX = Math.floor(coords.x - width / 2);
     let offsetY = Math.floor(coords.y - height / 2);
     if (offsetX !== 0) {
-      offsetX /= 15;
+      offsetX /= 10;
     }
     if (offsetY !== 0) {
-      offsetY /= 15;
+      offsetY /= 10;
     }
     return { offsetX, offsetY };
   };

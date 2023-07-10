@@ -8,7 +8,7 @@ const Navbar = ({ portfolio }: any) => {
     <nav className="relative h-[105px]">
       <div className="m-auto max-w-[1400px]">
         <div className=" flex items-center justify-between py-6 px-6 ">
-          <Link className="flex-1 text-2xl" to="/">
+          <Link className="flex-1 text-3xl font-bold" to="/">
             Cesar Camacho
           </Link>
           <ul className="hidden justify-end gap-16 md:flex">
