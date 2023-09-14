@@ -45,7 +45,7 @@ const Hero = () => {
   let { offsetX, offsetY } = coordinatesToTranslation(mousePosition);
 
   return (
-    <section className="relative max-h-[1200px] min-h-screen overflow-hidden">
+    <section className="relative  max-h-[1200px] min-h-screen overflow-hidden ">
       <Navbar portfolio={element} />
       <div className="flex flex-col items-center justify-between gap-12 sm:h-[calc(100vh-105px)] sm:gap-32">
         <div></div>

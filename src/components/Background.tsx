@@ -31,6 +31,24 @@ const Background = () => {
                 </div>
                 <p className="text-center">React JS</p>
               </div>
+              <div className="flex flex-col items-center duration-150 ease-in hover:scale-105">
+                <div className="mb-1 flex h-24 w-24 items-center justify-center rounded-full bg-slate-200">
+                  <img className="h-24 " src="assets/nextjs-logo.svg" alt="" />
+                </div>
+                <p className="text-center">Next JS</p>
+              </div>
+              <div className="flex flex-col items-center duration-150 ease-in hover:scale-105">
+                <div className="mb-1 flex h-24 w-24 items-center justify-center rounded-full bg-red-200">
+                  <img className=" h-16" src="assets/astro-logo.png" alt="" />
+                </div>
+                <p className="text-center">Astro</p>
+              </div>
+              <div className="flex flex-col items-center duration-150 ease-in hover:scale-105">
+                <div className="mb-1 flex h-24 w-24 items-center justify-center rounded-full bg-red-100">
+                  <img className="h-12" src="assets/sanitylogo.png" alt="" />
+                </div>
+                <p className="text-center">Sanity</p>
+              </div>
               <div className=" flex flex-col items-center duration-150 ease-in hover:scale-105">
                 <div className="mb-1 flex h-24 w-24 items-center justify-center rounded-full bg-red-100">
                   <img className="h-14" src=" assets/java-icon.svg" alt="" />

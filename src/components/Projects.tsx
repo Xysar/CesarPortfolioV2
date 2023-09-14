@@ -47,6 +47,55 @@ const Projects = () => {
           <div className="w-80  rounded-lg bg-white p-4 shadow-sm duration-150 ease-in hover:shadow-xl">
             <div className="relative mb-6 overflow-hidden rounded-lg ">
               <img
+                className="m-auto h-72 w-72 object-contain  "
+                src="assets\jorgeportfolioscreenshot.png"
+                alt="screenshot of photography portfolio project"
+              />
+              <div className="absolute top-0 flex h-full w-full flex-col items-center justify-center gap-2 bg-slate-900 opacity-0 duration-100 ease-in hover:opacity-90 ">
+                <div className="">
+                  <a
+                    href="https://github.com/Xysar/photo-portfolio-nextjs"
+                    target="_blank"
+                    className="inline-block rounded-full border-2 border-yellow-400 py-2 px-3 text-yellow-400 hover:bg-yellow-400 hover:text-black"
+                  >
+                    Github Repo
+                  </a>
+                </div>
+                <div className="">
+                  <a
+                    href="https://photo-portfolio-nextjs.vercel.app/"
+                    target="_blank"
+                    className="inline-block rounded-full border-2 border-yellow-400 py-2 px-3 text-yellow-400 hover:bg-yellow-400 hover:text-black"
+                  >
+                    Open Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h1 className="mb-3  text-center font-bold">
+              Photography Portfolio
+            </h1>
+            <p className="mb-3  ">
+              Portfolio website showcasing photography, uses Sanity headless CMS
+              to allow client to freely edit
+            </p>
+            <div className=" flex flex-wrap gap-1 ">
+              <p className="inline-block bg-navy px-2  py-1 text-white ">
+                Next.js
+              </p>
+              <p className="inline-block bg-navy px-2  py-1 text-white ">
+                React
+              </p>
+
+              <p className="inline-block bg-navy px-2 py-1 text-white ">
+                {" "}
+                Sanity
+              </p>
+            </div>
+          </div>
+          <div className="w-80  rounded-lg bg-white p-4 shadow-sm duration-150 ease-in hover:shadow-xl">
+            <div className="relative mb-6 overflow-hidden rounded-lg ">
+              <img
                 className="m-auto h-72 w-72 object-cover  "
                 src="assets/music-inbox.png"
                 alt="screenshot of pathfinder project"
@@ -84,9 +133,10 @@ const Projects = () => {
               <p className="inline-block bg-navy px-2  py-1 text-white ">
                 React
               </p>
+
               <p className="inline-block bg-navy px-2 py-1 text-white ">
                 {" "}
-                Javascript
+                Spring Boot
               </p>
             </div>
           </div>

@@ -14,7 +14,6 @@ const Home = () => {
 
   return (
     <div>
-      {" "}
       <Hero />
       <Background />
       <Projects />
